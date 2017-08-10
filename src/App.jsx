@@ -1,9 +1,12 @@
 import React from 'react';
+import Alert from 'react-bootstrap/lib/Alert';
 
 const greeting = () => {
   return (
     <div>
-      <h1>Hello from react!</h1>
+      <Alert bsStyle="info">
+        Hello from React Bootstrap
+      </Alert>
     </div>
   );
 };
