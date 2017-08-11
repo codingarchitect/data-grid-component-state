@@ -1,14 +1,7 @@
 import React from 'react';
-import Alert from 'react-bootstrap/lib/Alert';
+import DataGridSample from './data-grid-sample.jsx';
+import 'bootstrap/dist/css/bootstrap.css';
 
-const greeting = () => {
-  return (
-    <div>
-      <Alert bsStyle="info">
-        Hello from React Bootstrap
-      </Alert>
-    </div>
-  );
-};
+const App = () => <DataGridSample />
 
-export default greeting;
+export default App;
