@@ -12,10 +12,19 @@ const customers = [{
     Name: 'Sony Arouje',
   }]
 
-const DataGridSample = () => <DataGrid 
-  columns={columns} 
-  data={customers}
-  rowKey={columns[0].key} 
-  onRowSelectionChanged={console.log}/>;
+const DataGridSample = () => <div>
+    <DataGrid 
+      columns={columns} 
+      data={customers}
+      rowKey={columns[0].key}
+      rowSelectionMode="single"
+      onRowSelectionChanged={console.log} />
+    <DataGrid 
+      columns={columns} 
+      data={customers}
+      rowKey={columns[0].key}
+      rowSelectionMode="multiple"
+      onRowSelectionChanged={console.log} />
+  </div>;
 
 export default DataGridSample;
