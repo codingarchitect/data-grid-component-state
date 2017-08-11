@@ -15,6 +15,7 @@ const customers = [{
 const DataGridSample = () => <DataGrid 
   columns={columns} 
   data={customers}
-  rowKey={columns[0].key} />;
+  rowKey={columns[0].key} 
+  onRowSelectionChanged={console.log}/>;
 
 export default DataGridSample;
